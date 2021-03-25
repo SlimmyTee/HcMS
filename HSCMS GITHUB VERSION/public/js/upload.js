@@ -14,9 +14,6 @@
     appId: "1:1086929543598:web:5dc094783d5b61a3f8e83f"
   };
 
-  //Initialize Firebase
- firebase.initializeApp(firebaseConfig);
-
  //Selection Process
  function selectImage(e) {
 

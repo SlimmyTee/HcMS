@@ -1,4 +1,11 @@
-// Initialize Firebase (ADD YOUR OWN DATA)
+// Initialize Firebase
+var config = {
+  databaseURL: "https://hcms-86a06-default-rtdb.firebaseio.com/"
+};
+
+ //Initialize Firebase
+firebase.initializeApp(config);
+
 // Reference messages collection
 var messagesRef = firebase.database().ref('Ceapcom');
 
@@ -10,25 +17,24 @@ function submitForm(e){
   e.preventDefault();
 
   // Get values
-  var name = getInputVal('namee');
-  var soo = getInputVal('soo');
-  var nationality = getInputVal('nationality');
-  var company = getInputVal('company');
-  var sex = getInputVal('sex');
-  var age = getInputVal('age');
-  var phone = getInputVal('phone');
-  var pml = getInputVal('pml');
-  var psl = getInputVal('psl');
-  var medic = getSelection('medic');
-  var nameOfDrug = getSelection('message1')
-  var daily = getSelection('daily');
-  var name1 = getSelection('message2')
-  var smokeOption = getSelection('smokeOption');
-  var name2 = getSelection('message3')
-  var alcoholOption = getSelection('alcoholOption');
-  var name3 = getSelection('message4')
-  var sleepOption = getSelection('sleepOption');
-  var name4 = getSelection('message5')
+  const name = getInputVal('namee');
+  const soo = getInputVal('soo');
+  const nationality = getInputVal('nationality');
+  const sex = getInputVal('sex');
+  const age = getInputVal('age');
+  const phone = getInputVal('phone');
+  const pml = getInputVal('pml');
+  const psl = getInputVal('psl');
+  const medic = getSelection('medic');
+  const nameOfDrug = getSelection('message1')
+  const daily = getSelection('daily');
+  const name1 = getSelection('message2')
+  const smokeOption = getSelection('smokeOption');
+  const name2 = getSelection('message3')
+  const alcoholOption = getSelection('alcoholOption');
+  const name3 = getSelection('message4')
+  const sleepOption = getSelection('sleepOption');
+  const name4 = getSelection('message5')
   // Save message
   saveMessage(name, soo, nationality, sex, age, phone, pml, psl, medic, nameOfDrug, daily, name1, smokeOption, name2, alcoholOption, name3, sleepOption, name4);
 
