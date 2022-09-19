@@ -48,7 +48,7 @@
       
   <div class="container">
     <!-- <h1 class="brand"><span>STUDENDENT INFORMATION </span>MANAGEMENT SYSTEM</h1> -->
-    <div class="wrapper">
+    <!--<div class="wrapper">
       <div class="company-info">
         <center>
           <p><em> (Please Upload your most recent image)</em></p>
@@ -63,34 +63,53 @@
           <button id="image_select" onclick="selectImage()">Select Image</button>
           <button id="image_upload" onclick="uploadImage()">Upload Image</button>
       </center>
-      </div>
+      </div> -->
       <div class="contact">
-        <h3>REGISTER HERE</h3>
+        <h3>What are your symptoms?</h3>
         <div class="alert">Your message has been sent</div>
         <form id="contactForm">
           <p>
-            <label>Full Name</label>
-            <input type="text" name="namee" id="namee" required>
+            <label>Having headache?</label>
+            <select name="medic" id="medic">
+              <optgroup> Select
+              <option>Yes</option>
+              <option>No</option>
+            </optgroup>
+            </select>
+          <p>
+            <label>Vomiting?</label>
+            <select name="medic" id="medic">
+              <optgroup> Select
+              <option>Yes</option>
+              <option>No</option>
+            </optgroup>
+            </select>
           </p>
           <p>
-            <label>State Of Origin</label>
-            <input type="text" name="soo" id="soo">
+            <label>Are you presently on any medication</label>
+            <select name="medic" id="medic">
+              <optgroup> Select
+              <option>Yes</option>
+              <option>No</option>
+            </optgroup>
+            </select>
           </p>
           <p>
-            <label>Nationality</label>
-            <input type="text" name="nationality" id="nationality" required>
+            <label>Body temperature?</label>
+            <select name="medic" id="medic">
+              <optgroup> Select
+              <option>Yes</option>
+              <option>No</option>
+            </optgroup>
+            </select>
           </p>
           <p>
-            <label>Sex</label>
+            <label>Describe how you feel?</label>
             <input type="text" name="sex" id="sex" required>
           </p>
           <p>
-            <label>Age</label>
+            <label>Are you taking any routine drugs?</label>
             <input type="text" name="age" id="age" required>
-          </p>
-          <p>
-            <label>Phone Number</label>
-            <input type="text" name="phone" id="phone">
           </p>
           <p class="full">
             <label>Past Medical Illness</label>
@@ -166,9 +185,7 @@
             <textarea type="text" name="name4" id="message5" required></textarea>
           </p>
           <p class="full">
-            <a href="Symptoms.html">
-              <button type="submit">Submit</button> 
-            </a>
+            <button type="submit">Submit</button>
           </p>
         </form>
       </div>
