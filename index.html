@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./styles.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <title>HCMS|WELCOME</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
     <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <!-- <link href="light.css" rel="stylesheet" type="text/css"> -->
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div>
+    <div style="margin-bottom: 0px; padding-bottom: 0px;">
       
-      <nav class="navbar sticky-top navbar-expand-md">
-        <a class="navbar-brand" href="index.html">HCMS</a>
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#main-navigation" aria-label="Toggle navigation">
+      <nav class="navbar sticky-top navbar-expand-md bg-dark text-light">
+        <a class="navbar-brand text-light" href="index.html">HCMS</a>
+        <button class="navbar-toggler navbar-light text-light" type="button" data-toggle="collapse" data-target="#main-navigation" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="bg-dark w-100 collapse navbar-collapse " id="main-navigation">
+      <div class="bg-dark text-light w-100 collapse navbar-collapse " id="main-navigation">
         <!-- <button onclick="mainApp.logout();">logout</button> -->
       <ul class="navbar-nav">
         <li class="nav-item active">
@@ -36,22 +41,26 @@
     
     </nav>
     
-    <div class=" bg-dark w-100 text-light" style="color: white;">   
+    <div class="w-100" style="background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     padding-top: 30px;">   
     
-        <h1 class="text-light text-left p-5 mt-10" style="font-size: 20px;font-weight: bold;">WELCOME </h1>
+        <h1 class="text-dark text-left p-5 animate__heartBeat" style="font-size: 30px;font-weight: bold;" >Digitalizing the Health Sector with HCMS </h1>
         <hr class="bg-light w-30 ml-10" style="border: 2px solid white;">
-        <h1 class="text-light text-left p-5 mt-10" style="font-size: 20px;font-weight: bold;">Your new digital experience for getting first hand medical attention <b>HCMS</b> </h1>
+        <h1 class="text-light text-left p-5 mt-5 animate__pulse" style="font-size: 22px;font-weight: bold;">Your new digital experience for getting first hand medical attention <b class="text-dark" style="font-size:30px;">HCMS</b> </h1>
 
-        <h5 class="text-light text-left p-5" style="line-height: 30px;">Do Your Registration, upload necessary complaints <br>and book an appointment before getting to the hospital <br><b> HCMS</b>
+        <h5 class="text-light text-left p-5 mt-2" style="line-height: 30px;">Do Your Registration, upload necessary complaints <br>and book an appointment before getting to the hospital <br><b> HCMS</b>
             <br>
             <br>
-            <a class="btn btn-primary" href="login.html" role="button">SignUp / Login to Proceed</a>
+            <a class="btn btn-dark" href="login.html" role="button"> <i class="bi bi-arrow-bar-right"></i>
+              SignUp / Login to Proceed</a>
 
             <!-- <button type="button justify-content-center col-6" class="btn btn-warning" href="login.html">Sign Up / Login to Proceed</button> -->
         </h5>
 </div>
 
-<footer class="bg-dark"style="color: white; text-align: center;">
+<footer class="bg-dark"style="color: white; text-align: center; margin-top: 0px;">
       
     <div class="row">
       <div class="col-md-12 text-center text-light">
