@@ -94,14 +94,24 @@
         font-size: 13px;
         box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
     }
+    .submit:hover{
+        box-shadow: 2px 5px #FFFFFF;
+    }
     
     .forgot {
         color: #E1BEE7;
         padding-top: 15px;
     }
+    .forgot:hover {
+        color: white;
+    }
     
     a {
         color: #E1BEE7;
+        text-decoration: none
+    }
+    a:hover {
+        color: white;
         text-decoration: none
     }
     
@@ -115,7 +125,10 @@
 <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
 <!-- <link href="light.css" rel="stylesheet" type="text/css"> -->
 </head>
-<body class="bg-dark">
+<body style="background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
     
 <br>
 <br>
@@ -123,14 +136,14 @@
 <div class="sub-contianer">
     <a href="./landingpage.html"></a>
 <section>
-<h1 style="text-align: center; color: white;">LOGIN HERE</h1><br>
-    <div class="main">
+<h1 class="text-dark" style="text-align: center; color: white;">LOGIN HERE</h1><br>
+    <div class="main bg-dark">
         <p class="sign" align="center">Sign in</p>
-        <form class="form1">
-          <input class="un " type="text" align="center" placeholder="Username">
-          <input class="pass" type="password" align="center" placeholder="Password">
-          <a class="submit" align="center" href="register.html">Sign in</a>
-          <p class="forgot" align="center"><a href="#">Forgot Password?</p>
+        <form class="form1 text-light">
+          <input class="un text-light" type="text" align="center" placeholder="Username">
+          <input class="pass text-light" type="password" align="center" placeholder="Password">
+          <a class="submit text-dark fw-bold" align="center" href="register.html">Sign in</a>
+          <p class="forgot" align="center" style="text-decoration: none;"><a href="#">Forgot Password?</p>
                       
         </div>
     <div id="firebaseui-auth-container"></div>
